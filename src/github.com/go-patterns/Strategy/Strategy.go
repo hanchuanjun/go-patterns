@@ -18,7 +18,6 @@ func (p *person) say() {
 }
 
 type chinese struct {	
-	name string
 }
 
 func (c *chinese) say() {

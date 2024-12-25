@@ -64,7 +64,7 @@ func (b *builder) Build() Interface {
         wheels: b.wheels,
         speed:  b.speed,
     }
-}·
+}
 
 type car struct {
     color  Color
