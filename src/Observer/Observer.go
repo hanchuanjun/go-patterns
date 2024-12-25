@@ -55,12 +55,12 @@ func (o *eventObserver) OnNotify(e Event) {
 	fmt.Printf("*** Observer %d received: %d\n", o.id, e.Data)
 }
 
-func (o *eventNotifier) Register(l Observer) {
-	o.observers[l] = struct{}{}
+func (p *eventNotifier) Register(l Observer) {
+	p.observers[l] = struct{}{}
 }
 
-func (o *eventNotifier) Deregister(l Observer) {
-	delete(o.observers, l)
+func (p *eventNotifier) Deregister(l Observer) {
+	delete(p.observers, l)
 }
 
 func (p *eventNotifier) Notify(e Event) {
